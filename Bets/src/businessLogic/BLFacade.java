@@ -13,6 +13,7 @@ import java.util.Date;
 import domain.*;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
+import gui.ExtendedIterator;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -45,6 +46,7 @@ public interface BLFacade  {
 	 */
 	@WebMethod public Vector<Event> getEvents(Date date);
 	
+	@WebMethod public ExtendedIterator<Event> getEventsIter(Date date);
 	
 	/**
      * This method check if log user exists in the database with given password

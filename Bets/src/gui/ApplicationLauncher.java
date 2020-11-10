@@ -19,7 +19,7 @@ public class ApplicationLauncher {
 	public static void main(String[] args) {
 
 		ConfigXML c=ConfigXML.getInstance();
-		System.out.println("AmaiaSS");
+		
 		System.out.println(c.getLocale());
 
 		Locale.setDefault(new Locale(c.getLocale()));
@@ -47,8 +47,9 @@ public class ApplicationLauncher {
 
 			
 			boolean isLocal= c.isBusinessLogicLocal();
+			
 			LocalFactory f = new LocalFactory(isLocal);
-			f.createImplementation();
+			appFacadeInterface = f.createImplementation();
 			
 			/*
 			if (c.isBusinessLogicLocal()) {

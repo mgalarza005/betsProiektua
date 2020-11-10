@@ -20,7 +20,7 @@ public class LocalFactory {
 	}
 
 
-	public void createImplementation() throws MalformedURLException {
+	public BLFacade createImplementation() throws MalformedURLException {
 		ConfigXML c=ConfigXML.getInstance();
 		BLFacade appFacadeInterface;
 		if(this.isLocal) {
@@ -44,11 +44,14 @@ public class LocalFactory {
 			
 			//Singleton patroia
 			MainGUI.setBussinessLogic(appFacadeInterface);
+			
+			return appFacadeInterface;
 		}
 		if (c.getDataBaseOpenMode().equals("initialize")) 
 			appFacadeInterface.initializeBD();
 		 
 		//Singleton patroia
 		MainGUI.setBussinessLogic(appFacadeInterface);
+		return appFacadeInterface;
 	}
 }

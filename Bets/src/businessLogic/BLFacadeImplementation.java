@@ -13,6 +13,8 @@ import dataAccess.DataAccess;
 import domain.*;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
+import gui.ExtendedIterator;
+import gui.ExtendedIteratorEvents;
 
 /**
  * It implements the business logic as a web service.
@@ -75,7 +77,14 @@ public class BLFacadeImplementation  implements BLFacade {
 		dbManager.close();
 		return events;
 	}
-
+	@WebMethod	
+	public ExtendedIterator<Event> getEventsIter(Date date)  {
+		DataAccess dbManager=new DataAccess();
+		Vector<Event>  events=dbManager.getEvents(date);
+		ExtendedIteratorEvents extendedItr = new ExtendedIteratorEvents(events);
+		dbManager.close();
+		return extendedItr;
+	}
 	/**
 	 * This method check if log user exists in the database with given password
 	 * 
