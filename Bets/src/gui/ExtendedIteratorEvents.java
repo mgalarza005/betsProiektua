@@ -8,13 +8,13 @@ import domain.Event;
 
 public class ExtendedIteratorEvents implements ExtendedIterator<Event>{
 	Vector<Event> events;
+	int position=0;
 	
 	public ExtendedIteratorEvents(Vector<Event> events) {
 		super();
 		this.events = events;
 	}
-
-	int position=0;
+	
 
 	@Override
 	public boolean hasNext() {
