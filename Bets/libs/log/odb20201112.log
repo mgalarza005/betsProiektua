@@ -1,0 +1,61 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-11-12 22:28:33 #1 store] 
+Database 'C:\Users\MIKEL1\git\betsProiektua\Bets\resources\bets.temp' has been recovered (tr. 257-258)
+
+[2020-11-12 22:28:33 #2 store] 
+Database 'C:\Users\MIKEL1\git\betsProiektua\Bets\resources\bets.temp' is opened by 2436@LAPTOP-VSQPQNDP
+
+[2020-11-12 22:28:34 #3 type] 
+Type domain.User is not enhanced.
+
+[2020-11-12 22:28:34 #4 type] 
+Type domain.Worker is not enhanced.
+
+[2020-11-12 22:28:34 #5 type] 
+Type domain.Admin is not enhanced.
+
+[2020-11-12 22:28:34 #6 type] 
+Type domain.Question is not enhanced.
+
+[2020-11-12 22:28:34 #7 type] 
+Type domain.Kuota is not enhanced.
+
+[2020-11-12 22:28:34 #8 type] 
+Type domain.Event is not enhanced.
+
+[2020-11-12 22:28:34 #9 type] 
+Type domain.Apustua is not enhanced.
+
+[2020-11-12 22:28:34 #10 type] 
+Type domain.Mugimenduak is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-11-12 22:43:33 #1 store] 
+Database 'C:\Users\MIKEL1\git\betsProiektua\Bets\resources\bets.temp' is opened by 19820@LAPTOP-VSQPQNDP
+
+[2020-11-12 22:43:33 #2 type] 
+Type domain.User is not enhanced.
+
+[2020-11-12 22:43:33 #3 type] 
+Type domain.Worker is not enhanced.
+
+[2020-11-12 22:43:33 #4 type] 
+Type domain.Admin is not enhanced.
+
+[2020-11-12 22:43:33 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-11-12 22:43:33 #6 type] 
+Type domain.Kuota is not enhanced.
+
+[2020-11-12 22:43:33 #7 type] 
+Type domain.Event is not enhanced.
+
+[2020-11-12 22:43:33 #8 type] 
+Type domain.Apustua is not enhanced.
+
+[2020-11-12 22:43:33 #9 type] 
+Type domain.Mugimenduak is not enhanced.
+

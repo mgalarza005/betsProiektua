@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import businessLogic.BLFacadeImplementation;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -70,6 +73,21 @@ public class HasierakoPantailaGUI extends JFrame {
 		GertaerakButton.setBounds(106, 169, 203, 25);
 		contentPane.add(GertaerakButton);
 		
+		JButton ApustuakIkusi = new JButton("Apustuak ikusi");
+		ApustuakIkusi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					
+					//FindQuestionsGUI frame = new FindQuestionsGUI();
+					//frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}	
+			}
+		});
+		GertaerakButton.setBounds(106, 169, 203, 25);
+		contentPane.add(GertaerakButton);
+		
 		JButton ErregistratuButton = new JButton("Erregistratu");
 		ErregistratuButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -84,11 +102,16 @@ public class HasierakoPantailaGUI extends JFrame {
 		ErregistratuButton.setBounds(23, 63, 157, 61);
 		contentPane.add(ErregistratuButton);
 		
-		JButton btnNewButton = new JButton("Kuotak ikusi");
+		JButton btnNewButton = new JButton("Apustuak ikusi");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				KuotakIkusiGUI ki= new KuotakIkusiGUI();
-				ki.setVisible(true);
+				
+				BLFacadeImplementation bl = new BLFacadeImplementation();
+				User user = bl.get
+				WindowTable wt = new WindowTable(user);
+				wt.setVisible(true);
+				//KuotakIkusiGUI ki= new KuotakIkusiGUI();
+				//ki.setVisible(true);
 			}
 		});
 		btnNewButton.setBounds(106, 207, 203, 25);

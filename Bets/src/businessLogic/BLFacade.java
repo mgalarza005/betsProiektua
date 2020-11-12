@@ -81,6 +81,7 @@ public interface BLFacade  {
 	@WebMethod ArrayList<String> lortuMugimenduak(String usr);
 	@WebMethod void mugimenduaErabiltzaileariGehituDirua(String usr, double dirua);
 	@WebMethod Kuota lortuKuotaIrabzalea(Question g);
+	@WebMethod User getUser(String name);
 	@WebMethod void kalkulatuDirua(Kuota k,Question q);
 	@WebMethod void diruaErabiltzaileeiItzuli(Kuota selectedItem);
 	

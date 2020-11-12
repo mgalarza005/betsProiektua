@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-11-11 13:37:37 #1 store] 
+Database 'C:\Users\MIKEL1\git\betsProiektua\Bets\resources\bets.temp' is opened by 18828@LAPTOP-VSQPQNDP
+
+[2020-11-11 13:37:37 #2 type] 
+Type domain.User is not enhanced.
+
+[2020-11-11 13:37:37 #3 type] 
+Type domain.Worker is not enhanced.
+
+[2020-11-11 13:37:37 #4 type] 
+Type domain.Admin is not enhanced.
+
+[2020-11-11 13:37:37 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-11-11 13:37:37 #6 type] 
+Type domain.Kuota is not enhanced.
+
+[2020-11-11 13:37:37 #7 type] 
+Type domain.Event is not enhanced.
+
+[2020-11-11 13:37:37 #8 type] 
+Type domain.Apustua is not enhanced.
+
+[2020-11-11 13:37:37 #9 type] 
+Type domain.Mugimenduak is not enhanced.
+

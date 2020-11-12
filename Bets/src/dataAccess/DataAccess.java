@@ -347,6 +347,11 @@ public class DataAccess  {
 		System.out.println("Dirua gorde da.");
 
 	}
+	public User getUser(String usr) {
+		db.getTransaction().begin();
+		User u= db.find(User.class, usr);
+		return u;
+	}
 
 	public void KuotaEzabatu(Kuota ezabatzekoKuota) {
 		db.getTransaction().begin();

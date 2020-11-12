@@ -239,6 +239,14 @@ public class BLFacadeImplementation  implements BLFacade {
 		dbmanager.close();
 		
 	}
+	@Override
+	public User getUser(String name) {
+		DataAccess dbmanager= new DataAccess();
+		User u1 = dbmanager.getUser(name);
+		dbmanager.close();
+		return u1;
+		
+	}
 
 
 	@Override
