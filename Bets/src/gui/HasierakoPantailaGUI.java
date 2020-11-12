@@ -2,17 +2,19 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 
 import businessLogic.BLFacadeImplementation;
+import domain.User;
 
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class HasierakoPantailaGUI extends JFrame {
 
@@ -107,9 +109,20 @@ public class HasierakoPantailaGUI extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				BLFacadeImplementation bl = new BLFacadeImplementation();
-				User user = bl.get
-				WindowTable wt = new WindowTable(user);
-				wt.setVisible(true);
+				User user = bl.getUser("m");
+				UserAdapter model= new UserAdapter(user);
+				
+				JFrame j = new JFrame();
+				JTable table = new JTable(model);
+				j.add(new JScrollPane(table)); 
+				
+				j.setTitle(user.getLog()+"'s bets"); 
+				j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);     
+				j.pack(); 
+				j.setVisible(true);
+				
+				
+				//wt.setVisible(true);
 				//KuotakIkusiGUI ki= new KuotakIkusiGUI();
 				//ki.setVisible(true);
 			}
