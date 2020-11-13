@@ -22,13 +22,10 @@ public class UserAdapter extends AbstractTableModel{
 		apustuak =emaitza;
 		this.u=u1;
 	}
-
-
 	@Override
 	public int getColumnCount() {
 		return 1;
 	}
-
 	@Override     
 	public String getColumnName(int col) {  
 		return colNames[col];     
@@ -38,13 +35,8 @@ public class UserAdapter extends AbstractTableModel{
 	public int getRowCount() {
 		return apustuak.size();
 	}
-
-
 	@Override
 	public Object getValueAt(int a, int b) {
 		return ((Object) apustuak.get(a));
 	}
-
-
-
 }
