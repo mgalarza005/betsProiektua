@@ -75,20 +75,8 @@ public class HasierakoPantailaGUI extends JFrame {
 		GertaerakButton.setBounds(106, 169, 203, 25);
 		contentPane.add(GertaerakButton);
 		
-		JButton ApustuakIkusi = new JButton("Apustuak ikusi");
-		ApustuakIkusi.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					
-					//FindQuestionsGUI frame = new FindQuestionsGUI();
-					//frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}	
-			}
-		});
-		GertaerakButton.setBounds(106, 169, 203, 25);
-		contentPane.add(GertaerakButton);
+		
+		
 		
 		JButton ErregistratuButton = new JButton("Erregistratu");
 		ErregistratuButton.addActionListener(new ActionListener() {
