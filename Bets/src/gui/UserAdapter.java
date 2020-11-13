@@ -5,17 +5,21 @@ import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
 
+import businessLogic.BLFacade;
 import domain.Apustua;
 import domain.User;
 
 public class UserAdapter extends AbstractTableModel{
-	private List<Apustua> apustuak;
+	private List<String> apustuak;
 	private User u;
 	private String[] colNames = new String[] {"Mugimenduak"};
-	
-	
+
+
 	public UserAdapter(User u1) {
-		apustuak = (List<Apustua>) u1.getGertatukoMugimendua();
+		BLFacade negozioLogika=MainGUI.getBusinessLogic();
+		ArrayList<String> emaitza= negozioLogika.lortuMugimenduak("m");
+
+		apustuak =emaitza;
 		this.u=u1;
 	}
 
@@ -25,7 +29,11 @@ public class UserAdapter extends AbstractTableModel{
 		return 1;
 	}
 
-
+	@Override     
+	public String getColumnName(int col) {  
+		return colNames[col];     
+		
+	} 
 	@Override
 	public int getRowCount() {
 		return apustuak.size();
@@ -34,9 +42,9 @@ public class UserAdapter extends AbstractTableModel{
 
 	@Override
 	public Object getValueAt(int a, int b) {
-		return ((Object) apustuak.get(b));
+		return ((Object) apustuak.get(a));
 	}
-	
-	
+
+
 
 }
